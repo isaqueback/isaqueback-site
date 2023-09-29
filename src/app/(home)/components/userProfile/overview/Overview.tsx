@@ -26,7 +26,7 @@ export default function Overview() {
                 </p>
             </div>
             <nav className='flex gap-10 max-md:gap-10 max-lg:gap-20 max-md:flex-col max-lg:flex-row max-xl:flex-col max-md:items-center max-xl:justify-center'>
-                <Button1 text="CONTATO" href='#contact' fontSize='lg' />
+                <Button1 text="CONTATO" href='#contacts' fontSize='lg' />
                 <Button1 text="PROJETOS" href='#projects' fontSize='lg' />
             </nav>
         </div >

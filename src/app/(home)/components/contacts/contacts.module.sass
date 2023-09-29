@@ -1,0 +1,46 @@
+.contacts
+    background-image: url('../../../assets/illustrations/wave.svg')
+    background-repeat: no-repeat
+    background-position: bottom
+
+    & > div
+        & > div
+            nav
+                & > div
+                    display: flex
+                    align-items: center
+                    gap: 0.5rem
+
+                    a
+                        text-decoration: underline
+
+                        &:hover
+                            color: rgb(15 23 42)
+                            font-weight: 400
+
+        form
+            label
+                display: flex
+                flex-direction: column
+                gap: 10px
+
+                &:focus-within
+                    color: rgb(15 23 42)
+
+                small
+                    color: rgb(239 68 68)
+
+                span
+
+                textarea
+                    resize: none
+
+                input, textarea
+                    padding: 0.75rem
+                    border-radius: 0.4rem
+                    font-weight: 400
+
+
+                    &:focus
+                        outline: 2px solid rgb(15 23 42)
+        
