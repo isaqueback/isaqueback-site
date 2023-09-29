@@ -1,7 +1,6 @@
-import dynamic from 'next/dynamic'
 import Button2 from '../../../../buttons/Buttons2'
 import { ProjectType } from '../Projects'
-const Device = dynamic(() => import('./device/Device'), { ssr: false })
+import Device from './device/Device'
 
 export default function Project({
   title,
