@@ -26,7 +26,7 @@ export default function Device({ img }: DeviceProps) {
       <Skeleton
         variant="rounded"
         animation="wave"
-        className={`w-[25rem] max-2xl:w-[25rem] max-xl:w-[20rem] max-lg:w-full min-h-[17.5rem] absolute top-0 left-0 ${loader}`}
+        className={`w-[25rem] max-2xl:w-[25rem] max-xl:w-[20rem] max-lg:w-full  min-h-[17.5rem] absolute top-0 left-0 ${loader}`}
       />
     </div>
   )
