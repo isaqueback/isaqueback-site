@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        loader: 'imgix',
-        path: '/'
+    env: {
+        staticFormsPrivateKey: process.env.STATIC_FORMS_PRIVATE_KEY
     }
 }
 
