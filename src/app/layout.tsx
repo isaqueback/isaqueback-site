@@ -46,14 +46,12 @@ const sourceSansPro = localFont({
   variable: '--font-source-sans-pro',
 })
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className='scroll-smooth'>
-      <body className={`overflow-x-hidden ${inter.variable} ${sourceSansPro.variable}`}>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`overflow-x-hidden ${inter.variable} ${sourceSansPro.variable}`}
+      >
         {children}
       </body>
     </html>
