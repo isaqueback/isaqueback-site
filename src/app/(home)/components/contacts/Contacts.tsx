@@ -37,7 +37,10 @@ interface Response {
 
 const emailFormSchema = z.object({
   name: z.string().nonempty('O campo nome deve ser preenchido'),
-  email: z.string().email('Coloque um e-mail válido. Por exemplo: fulano@algo.com').nonempty('O campo e-mail deve ser preenchido'),
+  email: z
+    .string()
+    .email('Coloque um e-mail válido. Por exemplo: fulano@algo.com')
+    .nonempty('O campo e-mail deve ser preenchido'),
   subject: z.string().nonempty('O campo título deve ser preenchido'),
   message: z.string().nonempty('O campo mensagem deve ser preenchido'),
 })
@@ -60,7 +63,6 @@ export default function Contacts() {
   async function onSubmit({ name, email, subject, message }: EmailFormType) {
     try {
       setIsFormSubmitting(true)
-      // console.log(process.env.NEXT_PUBLIC_STATIC_FORMS_PRIVATE_KEY)
 
       const contact: Contact = {
         name,
