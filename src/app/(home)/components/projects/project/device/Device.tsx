@@ -1,8 +1,4 @@
-'use client'
-
 import Image from 'next/image'
-import { useState } from 'react'
-import Skeleton from '@mui/material/Skeleton'
 
 interface DeviceProps {
   img: string
