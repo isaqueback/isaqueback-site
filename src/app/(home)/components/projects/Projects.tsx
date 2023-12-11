@@ -5,6 +5,7 @@ import todoDevices from '@/app/assets/illustrations/todo-devices.svg'
 import gitHubBlog from '@/app/assets/illustrations/github-blog-devices.svg'
 import countdown from '@/app/assets/illustrations/countdown-devices.svg'
 import myCurriculumDevices from '@/app/assets/illustrations/mycurriculum-devices.svg'
+import findAFriendDevices from '@/app/assets/illustrations/findAFriend-devices.svg'
 
 export interface ProjectType {
   title: string
@@ -17,6 +18,48 @@ export interface ProjectType {
 
 export default function Projects() {
   const projects: ProjectType[] = [
+    {
+      title: 'FindAFriend',
+      description:
+        'Este projeto permite colocar seu animal para adoção ou encontrar seu futuro pet. Projeto full-stack, mas com seu back-end em andamento.',
+      gitHubUrl: 'https://github.com/isaqueback/find-a-friend',
+      technologies: [
+        'HTML',
+        'CSS',
+        'SASS',
+        'Tailwind',
+        'TypeScript',
+        'JavaScript',
+        'Next.js',
+        'Zod',
+        'API Rest',
+        'GoogleMapReact',
+        'Node.js',
+        'Prisma (ORM)',
+        'Fastify',
+        'Vittest (testes)',
+      ],
+      siteUrl: 'https://find-a-friend-isaqueback.vercel.app/',
+      img: findAFriendDevices,
+    },
+    {
+      title: 'GitHub Blog',
+      description:
+        'Este projeto utiliza a API do GitHub para buscar issues de um repositório e dados de perfil e mostrar em tela em forma de blog.',
+      img: gitHubBlog.src,
+      technologies: [
+        'HTML',
+        'CSS',
+        'Styled Components',
+        'JavaScript',
+        'TypeScript',
+        'React (Vite.js)',
+        'Consumo de API',
+        'React Router Dom',
+      ],
+      gitHubUrl: 'https://github.com/isaqueback/github-blog',
+      siteUrl: 'https://github-blog-isaqueback.netlify.app/',
+    },
     {
       title: 'MyCurriculum',
       description:
@@ -37,24 +80,6 @@ export default function Projects() {
         'Nodemailer',
       ],
       gitHubUrl: 'https://github.com/isaqueback/mycurriculum',
-    },
-    {
-      title: 'GitHub Blog',
-      description:
-        'Este projeto utiliza a API do GitHub para buscar issues de um repositório e dados de perfil e mostrar em tela em forma de blog.',
-      img: gitHubBlog.src,
-      technologies: [
-        'HTML',
-        'CSS',
-        'Styled Components',
-        'JavaScript',
-        'TypeScript',
-        'React (Vite.js)',
-        'Consumo de API',
-        'React Router Dom',
-      ],
-      gitHubUrl: 'https://github.com/isaqueback/github-blog',
-      siteUrl: 'https://github-blog-isaqueback.netlify.app/',
     },
     {
       title: 'Countdown',
