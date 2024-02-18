@@ -12,7 +12,7 @@ export default function Project({
 }: ProjectType) {
   return (
     <div
-      className={`project flex justify-start items-center gap-20 max-xl:gap-12 max-lg:gap-10 max-lg:flex-col shadow-lg rounded-lg px-10 max-xs:px-2 py-10 transition ease-out duration-300 hover:scale-[1.02] max-lg:scale-[1.01]`}
+      className={`group project flex justify-start items-center gap-20 max-xl:gap-12 max-lg:gap-10 max-lg:flex-col shadow-lg rounded-lg px-10 max-xs:px-2 py-10 transition ease-out duration-300 hover:scale-[1.02] max-lg:scale-[1.01]`}
     >
       <Device img={img} />
       <div className="flex flex-col gap-6">

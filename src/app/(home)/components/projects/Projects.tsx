@@ -1,11 +1,12 @@
 import H3 from '../../../hTags/H3'
 import styles from './projects.module.sass'
 import Project from './project/Project'
-import todoDevices from '@/app/assets/illustrations/todo-devices.svg'
-import gitHubBlog from '@/app/assets/illustrations/github-blog-devices.svg'
-import countdown from '@/app/assets/illustrations/countdown-devices.svg'
-import myCurriculumDevices from '@/app/assets/illustrations/mycurriculum-devices.svg'
-import findAFriendDevices from '@/app/assets/illustrations/findAFriend-devices.svg'
+
+import todoDevices from '@/app/assets/illustrations/todo-devices.png'
+import gitHubBlog from '@/app/assets/illustrations/github-blog-devices.png'
+import countdown from '@/app/assets/illustrations/countdown-devices.png'
+import gestixIllustration from '@/app/assets/illustrations/gestix-melhoria.png'
+import findAFriendDevices from '@/app/assets/illustrations/findAFriend-devices.png'
 
 export interface ProjectType {
   title: string
@@ -18,6 +19,23 @@ export interface ProjectType {
 
 export default function Projects() {
   const projects: ProjectType[] = [
+    {
+      title: 'Gestix',
+      description: 'Melhoria da página principal do site gestix.com',
+      img: gestixIllustration.src,
+      technologies: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'TypeScript',
+        'React.js',
+        'Next.js',
+        'Tailwind',
+        'ChatGPT',
+      ],
+      siteUrl: 'https://gestix-melhoria.vercel.app',
+      gitHubUrl: 'https://github.com/isaqueback/gestix-melhoria',
+    },
     {
       title: 'FindAFriend',
       description:
@@ -59,27 +77,6 @@ export default function Projects() {
       ],
       gitHubUrl: 'https://github.com/isaqueback/github-blog',
       siteUrl: 'https://github-blog-isaqueback.netlify.app/',
-    },
-    {
-      title: 'MyCurriculum',
-      description:
-        'Este projeto será um futuro site para a criação de currículos profissionais.',
-      img: myCurriculumDevices.src,
-      technologies: [
-        'HTML',
-        'Styled Components',
-        'TypeScript',
-        'Next.js',
-        'Node',
-        'Sequelize',
-        'PostgreSQL',
-        'Express',
-        'API REST',
-        'Multer',
-        'Amazon AWS',
-        'Nodemailer',
-      ],
-      gitHubUrl: 'https://github.com/isaqueback/mycurriculum',
     },
     {
       title: 'Countdown',
