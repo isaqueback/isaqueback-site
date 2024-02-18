@@ -58,7 +58,7 @@ export default function Projects() {
         'Vittest (testes)',
       ],
       siteUrl: 'https://find-a-friend-isaqueback.vercel.app/',
-      img: findAFriendDevices,
+      img: findAFriendDevices.src,
     },
     {
       title: 'GitHub Blog',
