@@ -7,6 +7,7 @@ import gitHubBlog from '@/app/assets/illustrations/github-blog-devices.png'
 import countdown from '@/app/assets/illustrations/countdown-devices.png'
 import gestixIllustration from '@/app/assets/illustrations/gestix-melhoria.png'
 import findAFriendDevices from '@/app/assets/illustrations/findAFriend-devices.png'
+import devLabIgm from '@/app/assets/illustrations/devlab.png'
 
 export interface ProjectType {
   title: string
@@ -20,6 +21,25 @@ export interface ProjectType {
 export default function Projects() {
   const projects: ProjectType[] = [
     {
+      title: 'DevLab',
+      description:
+        'Um site que contém ferramentas de CSS e design, como por exemplo uma delas: conversor de hex para rgb. Utilizei a nova versão do Next.js, a 14, utilizei pela primeira vez o composition pattern e coloquei multi idiomas.',
+      img: devLabIgm.src,
+      technologies: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'TypeScript',
+        'React.js',
+        'Next.js',
+        'Tailwind',
+        'Google Adsense',
+        'ChatGPT (img)',
+      ],
+      siteUrl: 'https://dev-lab.tech',
+      gitHubUrl: 'https://github.com/isaqueback/devlab',
+    },
+    {
       title: 'Gestix',
       description: 'Melhoria da página principal do site gestix.com',
       img: gestixIllustration.src,
@@ -31,7 +51,7 @@ export default function Projects() {
         'React.js',
         'Next.js',
         'Tailwind',
-        'ChatGPT',
+        'ChatGPT (img)',
       ],
       siteUrl: 'https://gestix-melhoria.vercel.app',
       gitHubUrl: 'https://github.com/isaqueback/gestix-melhoria',
@@ -113,6 +133,7 @@ export default function Projects() {
       siteUrl: 'https://todo-isaqueback.netlify.app/',
     },
   ]
+
   return (
     <section
       id="projects"
