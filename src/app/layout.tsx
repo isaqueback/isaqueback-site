@@ -2,6 +2,7 @@ import './globals.sass'
 import { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`overflow-x-hidden ${inter.variable} ${sourceSansPro.variable}`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
