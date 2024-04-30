@@ -35,7 +35,7 @@ export default function Description() {
   useEffect(() => {
     const descriptionData = {
       elementRef: descriptionRef,
-      text: `<span>&lt;p&gt;</span><br/><span style="margin-left: 60px">Possuo 25 anos, com 4 meses de experiência profissional e 3 anos focados em projetos pessoais.</span><br/><span>&lt;/p&gt;</span>`,
+      text: `<span>&lt;p&gt;</span><br/><span style="margin-left: 60px">Possuo 25 anos, com 5 meses de experiência profissional e 3 anos focados em projetos pessoais.</span><br/><span>&lt;/p&gt;</span>`,
       interval: 25,
       blink: 500,
     }
