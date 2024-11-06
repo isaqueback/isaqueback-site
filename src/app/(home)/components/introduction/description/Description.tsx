@@ -2,6 +2,7 @@
 
 import styles from './description.module.sass'
 import { useEffect, useRef } from 'react'
+import { differenceInMonths } from 'date-fns'
 
 interface AnimateTextProps {
   text: string
@@ -33,9 +34,11 @@ export default function Description() {
   }
 
   useEffect(() => {
+    const myAge = new Date().getFullYear() - 1998
+    const myExp = differenceInMonths(new Date(), new Date(2024, 0, 1))
     const descriptionData = {
       elementRef: descriptionRef,
-      text: `<span>&lt;p&gt;</span><br/><span style="margin-left: 60px">Possuo 25 anos, com 7 meses de experiência profissional e 3 anos focados em projetos pessoais.</span><br/><span>&lt;/p&gt;</span>`,
+      text: `<span>&lt;p&gt;</span><br/><span style="margin-left: 60px">Possuo ${myAge} anos, com ${myExp} meses de experiência profissional e 3 anos focados em projetos pessoais.</span><br/><span>&lt;/p&gt;</span>`,
       interval: 25,
       blink: 500,
     }
